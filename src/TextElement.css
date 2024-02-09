@@ -1,0 +1,19 @@
+
+.text-box{
+    margin-left: 10%;
+}
+.title{
+    font-family: "Futura-Medium";
+    margin-bottom: 0%;
+}
+
+.subtitle{
+    font-family: "Futura-Medium-Italic";
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-top: -0.2rem;
+}
+
+.body-text{
+    font-family: "Futura-Medium-Italic";
+}

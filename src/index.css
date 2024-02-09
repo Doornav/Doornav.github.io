@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url(/public/fonts/Futura\ Medium.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Futura-Medium-Italic';
+  src: url(/public/fonts/Futura\ Medium\ Italic.otf);
 }
+
+body {
+  margin: 2%;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.flex-container{
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+:root {
+  font-family: 'Futura-Medium-Italic' !important;
+}
+
+  
