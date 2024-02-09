@@ -1,0 +1,19 @@
+.box{
+    background-color: #747474;
+    width: min(35vw, 35vh);
+    height: min(50vw, 50vh);
+    border-radius: 3vw;
+    flex-shrink: 0;
+    color: lightgray;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .box {
+    background-color: #747474;
+    width: min(70vw, 70vh);
+    height: min(40vw, 40vh);
+    border-radius: 3vw;
+    flex-shrink: 0;
+    }
+  }

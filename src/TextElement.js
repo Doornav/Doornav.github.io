@@ -1,16 +1,16 @@
 import './TextElement.css'
 
-function TextElement({title, subtitle, bodyText}){
+function TextElement(props){
     return(
         <body className="text-box">
             <h1 className='title'>
-                {title}
+                {props.title ? props.title : ""}
             </h1>
             <h2 className='subtitle'>
-                {subtitle}
+                {props.subtitle ? props.subtitle : ""}
             </h2>
             <div className='body-text'>
-                {bodyText}
+                {props.bodyText ? props.bodyText : ""}
             </div>
         </body>
     );

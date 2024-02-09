@@ -10,6 +10,7 @@
 
 body {
   margin: 2%;
+  background-color: blue;
 }
 
 @media only screen and (max-width: 800px) {
@@ -24,6 +25,7 @@ body {
   display: flex;
   flex-shrink: 0;
   margin-top: 50px;
+  justify-content: space-around;
 }
 
 :root {
