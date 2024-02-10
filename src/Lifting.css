@@ -1,0 +1,16 @@
+.lifting-container{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin-inline: auto;
+    width: 80%;
+    background-color: #747474;
+    color: black;
+    border-radius: 3vw;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    flex-shrink: 0;
+    position: relative;
+    
+    
+}

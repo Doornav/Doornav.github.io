@@ -2,9 +2,9 @@ import "./ProjectCard.css"
 
 function ProjectCard(){
     return(
-        <body className="box">
+        <div className="box">
             <h1>Project</h1>
-        </body>
+        </div>
 
     );
 }

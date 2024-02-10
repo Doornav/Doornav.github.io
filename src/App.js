@@ -3,12 +3,45 @@ import ImageContainer from './ImageContainer';
 import TextElement from './TextElement';
 import ProjectCard from './ProjectCard';
 import React, { useEffect, useState } from 'react';
+import Skills from './Skills';
+import Lifting from './Lifting';
+
 
 function App() {
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Update the scroll position
+      setScrollPosition(window.scrollY);
+    };
+
+    // Add scroll event listener when component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
+
+  
+  
+  document.body.style.backgroundColor = scrollPosition >= 1800 ? 'darkgray' : 'white';
+  document.body.style.transition = 'background-color 0.3s ease-in-out';
+
+  
+  document.body.style.color = scrollPosition >= 1800 ? 'white' : 'black';
+  document.body.style.transition = 'color 0.3s ease-in-out';
+
+  const centerText = {
+    margin: '0px',
+  }
+ 
   return (
-    <body>
-      <Navbar />
+    <>
+      <Navbar/>
       <div className='flex-container'>
         <ImageContainer />
         <TextElement
@@ -32,8 +65,17 @@ function App() {
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
+        
       </div>
-    </body>
+      <div className='skills-flex-container'>
+        <TextElement
+        title = 'Skills' 
+        style = {centerText} 
+        />
+        <Skills/>
+      </div>
+      <Lifting></Lifting>
+    </>
   );
 }
 

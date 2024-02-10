@@ -8,10 +8,8 @@
   src: url(/public/fonts/Futura\ Medium\ Italic.otf);
 }
 
-body {
-  margin: 2%;
-  background-color: blue;
-}
+
+
 
 @media only screen and (max-width: 800px) {
   .flex-container {
@@ -20,6 +18,12 @@ body {
   }
 }
 
+.skills-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .flex-container{
   display: flex;
