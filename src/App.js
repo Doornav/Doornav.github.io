@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard';
 import React, { useEffect, useState } from 'react';
 import Skills from './Skills';
 import Lifting from './Lifting';
+import Contact from './Contact';
 
 
 function App() {
@@ -75,6 +76,10 @@ function App() {
         <Skills/>
       </div>
       <Lifting></Lifting>
+      <div className='flex-container'>
+        <Contact/>
+      </div>
+      
     </>
   );
 }
