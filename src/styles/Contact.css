@@ -1,10 +1,8 @@
 .contact-container{
-    align-items: flex-end;
     margin: 2%;
     padding: 2%;
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    width: 60%;
     height: min(50vw, 50vh);
     background-color: #747474;
     color: black;
@@ -16,27 +14,58 @@
     position: relative;
 }
 
+.widget-container{
+    flex-direction: column;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.icon-container {
+    display: flex;
+    
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items with space between them */
+    margin: 20px;
+    height: fit-content;
+  }
+  
+  /* Style for each image */
+  .icon-container img {
+    max-width: 80px;
+    width: calc(50% - 5px); /* Calculate width for two columns with gap */
+    margin-bottom: 5px; /* Adjust the gap between rows */
+    height:20%
+  }
+
+.field-inputs{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
 .contact-title{
-    align-self: flex-start;
-    margin-left: 5%;
+    text-align: center;
 }
 
 .name-input {
     margin-block: 1%;
-    width: 70%;
+    width: 100%;
     height: 3rem;
     border-radius: 3vw;
 }
 .email-input{
     margin-block: 1%;
-    width: 70%;
+    width: 100%;
     height: 3rem;
     border-radius: 3vw;
 }
 
 .input{
     margin-block: 1%;
-    width: 70%;
+    width: 100%;
     height: 50%;
     border-radius: 3vw;
 }
@@ -44,10 +73,8 @@
 .submit-button{
     width: fit-content;
     height: fit-content;
-    align-self: flex-start;
-    margin-left: 5%;
-    
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name-input::placeholder, .email-input::placeholder, .input::placeholder {
