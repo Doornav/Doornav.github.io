@@ -9,8 +9,7 @@ function ImageContainer() {
       className='imageContainer'
       onClick={() => setActive((prevActive) => !prevActive)}
       style={{
-        width: active ? 'min(70vw,70vh)' : 'min(50vw, 50vh)',
-        margin: active ?  '2% 0 2% 16%': '2%', // Set a fixed margin on both sides
+        width: active ? 'min(70vw,70vh)' : 'min(50vw, 50vh)', 
       }}
     >
       Insert Image Here

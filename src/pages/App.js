@@ -29,12 +29,12 @@ function App() {
 
   
   
-  document.body.style.backgroundColor = scrollPosition >= 1800 ? 'darkgray' : 'white';
-  document.body.style.transition = 'background-color 0.3s ease-in-out';
+  document.body.style.backgroundColor = scrollPosition >= 1800 ? '#212121' : 'white';
+  document.body.style.transition = 'background-color 0.5s ease-in-out';
 
   
   document.body.style.color = scrollPosition >= 1800 ? 'white' : 'black';
-  document.body.style.transition = 'color 0.3s ease-in-out';
+
 
   const centerText = {
     margin: '0px',
