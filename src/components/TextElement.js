@@ -1,4 +1,4 @@
-import './TextElement.css'
+import '../styles/TextElement.css'
 
 function TextElement(props){
     const containerStyle = {

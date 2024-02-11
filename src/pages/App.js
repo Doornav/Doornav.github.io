@@ -1,11 +1,11 @@
-import Navbar from './Navbar';
-import ImageContainer from './ImageContainer';
-import TextElement from './TextElement';
-import ProjectCard from './ProjectCard';
+import Navbar from '../components/Navbar';
+import ImageContainer from '../components/ImageContainer';
+import TextElement from '../components/TextElement';
+import ProjectCard from '../components/ProjectCard';
 import React, { useEffect, useState } from 'react';
-import Skills from './Skills';
-import Lifting from './Lifting';
-import Contact from './Contact';
+import Skills from '../components/Skills';
+import Lifting from '../components/Lifting';
+import Contact from '../components/Contact';
 
 
 function App() {

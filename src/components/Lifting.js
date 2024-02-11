@@ -1,12 +1,20 @@
-import './Lifting.css'
+import '../styles/Lifting.css'
 import TextElement from './TextElement';
 import CompoundLift from './CompoundLift';
 
 function Lifting(){
     const compoundLiftTypes = ['Squat', 'Bench', 'Deadlift']
-    const listLifts = compoundLiftTypes.map(compoundLiftType => (
-        <CompoundLift key={compoundLiftType} type={compoundLiftType} />
-      ));
+    const listLifts = compoundLiftTypes.map((compoundLiftType, index) => (
+  <CompoundLift
+    key={compoundLiftType}
+    type={compoundLiftType}
+    style={{
+      borderRadius: index === 0 ? '3vw 2vw 2vw 0' : 
+      index === compoundLiftTypes.length - 1 ? '0 2vw 2vw 3vw' :   // Last: no top left radius
+                    '0 2vw 2vw 0'  // Middle: no top left or bottom left radius
+    }}
+  />
+));
     return(
         <div className='lifting-container'>
             <div>

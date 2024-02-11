@@ -1,0 +1,58 @@
+.contact-container{
+    align-items: flex-end;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: min(50vw, 50vh);
+    background-color: #747474;
+    color: black;
+    border-radius: 3vw;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    flex-shrink: 0;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.contact-title{
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.name-input {
+    margin-block: 1%;
+    width: 70%;
+    height: 3rem;
+    border-radius: 3vw;
+}
+.email-input{
+    margin-block: 1%;
+    width: 70%;
+    height: 3rem;
+    border-radius: 3vw;
+}
+
+.input{
+    margin-block: 1%;
+    width: 70%;
+    height: 50%;
+    border-radius: 3vw;
+}
+
+.submit-button{
+    width: fit-content;
+    height: fit-content;
+    align-self: flex-start;
+    margin-left: 5%;
+    
+    
+}
+
+.name-input::placeholder, .email-input::placeholder, .input::placeholder {
+    /* Add your placeholder font styles here */
+    font-family: 'Futura-Medium-Italic';
+    font-size: 1rem;
+    color: black; /* Placeholder text color */
+  }

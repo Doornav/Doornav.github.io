@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './ImageContainer.css'
+import '../styles/ImageContainer.css'
 
 function ImageContainer(){
     const [active, setActive] = useState(false);
