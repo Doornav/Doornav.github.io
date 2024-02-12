@@ -16,6 +16,9 @@ function Lifting() {
                     , 'here is where ill put my squat info'
                     , 'here is where ill put my bench info'
                     , 'here is where ill put my deadlift info']
+    const video = [ '' ,'TBbQePjURyk'
+                    , 'eJurfWUbsBI'
+                    ,'S7fKFg-vS1o']
 
     return (
         
@@ -42,6 +45,7 @@ function Lifting() {
             <TextElement
                 title={titleName[toggleState]}
                 bodyText={content[toggleState]}
+                video={video[toggleState]}
             />
         </div>
     );

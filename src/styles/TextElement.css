@@ -18,3 +18,10 @@
     font-family: "Futura-Medium-Italic";
     font-size: 1.2rem;
 }
+.video{
+    width: 50vw;
+    height: 28vw;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;
+}

@@ -18,15 +18,25 @@
 }
 
 .tab{
+    font-size: 1.5rem;
+    height: 2rem;
     text-align: center;
     width:25%;
     background-color: #747474;
     color: #D9D9D9;
+    transition: filter 0.1s ease-in-out;
+    &:hover{
+        filter: drop-shadow(0 7px 7px);
+    }
+    
 }
 .active-tab{
+    font-size: 1.5rem;
+    height: 2rem;
     text-align: center;
     width: 25%;
     background-color: #D9D9D9;
     color: #747474;
+    transition: filter 0.1s ease-in-out;
 }
 
