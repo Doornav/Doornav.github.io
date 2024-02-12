@@ -1,6 +1,6 @@
 
 .text-box{
-    
+    margin: 5%;
 }
 .title{
     font-family: "Futura-Medium";
@@ -16,4 +16,5 @@
 
 .body-text{
     font-family: "Futura-Medium-Italic";
+    font-size: 1.2rem;
 }

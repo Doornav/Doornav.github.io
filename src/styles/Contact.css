@@ -123,12 +123,12 @@
 .name-input::placeholder, .email-input::placeholder {
     /* Add your placeholder font styles here */
     font-family: 'Futura-Medium-Italic';
-    font-size: 1vw;
+    font-size: .5rem;
     color: black; /* Placeholder text color */
   }
   .input::placeholder{
     font-family: 'Futura-Medium-Italic';
-    font-size: 1vw;
+    font-size: .5rem;
     color: black; /* Placeholder text color */
     vertical-align: text-top;
   }

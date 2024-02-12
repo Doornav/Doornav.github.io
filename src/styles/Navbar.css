@@ -13,7 +13,6 @@
     filter: inherit;
     white-space: nowrap;
 
-
 }
 
 .nav{
@@ -24,7 +23,7 @@
     position: fixed;
     align-self:center;
     margin-top: -8%;
-    width: 94%;
+    width: 95%;
     display: flex;
     color: white;
     border-radius: 8vw;

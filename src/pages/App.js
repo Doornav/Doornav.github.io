@@ -31,7 +31,7 @@ function App() {
 
   
   
-  document.body.style.backgroundColor = scrollPosition >= 1800 ? '#212121' : 'white';
+  document.body.style.backgroundColor = scrollPosition >= 1800 ? '#212121' : '#C8C8C8';
   document.body.style.transition = 'background-color 0.5s ease-in-out';
 
   
@@ -46,23 +46,24 @@ function App() {
     <>
       <Navbar/>
       <div className='flex-container' style={{ marginTop: '10%' }} id='about'>
-        <ImageContainer />
+        <ImageContainer imgLink = "./images/profile_icon.jpg" />
         <TextElement
           title="Pranav Sathianathan"
           subtitle="Undergraduate Student"
-          bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          bodyText="Hey! My name is Pranav Preethan Sathianathan and I am 19 years old. I live in the Greater Seattle Area, but I go to university in Santa Cruz, California. Some of my hobbies are lifting 🏋️, basketball 🏀, video games 🎮, hiking 🥾, and mountain biking 🚵‍♂️."
         />
       </div>
       <div className='flex-container' id='experience'>
         <TextElement
           title="B.S Computer Science Undergraduate"
-          bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          subtitle ="UC Santa Cruz"
+          bodyText="Currently I am a first year at University of California, Santa Cruz. I am currently affiliated with Stevenson College. Relavent Course work I have completed so far includes :CSE 20: CSE 30: CSE 12: CSE 13: CSE 16"
         />
-        <ImageContainer/>
+        <ImageContainer imgLink = "./images/UCSC_icon.png"/>
       </div>
       <TextElement
         title = "Experiences & Projects"
-        bodyText ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Nisi lacus sed viverra tellus in hac habitasse. Nibh tellus molestie nunc non blandit massa enim. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Quisque non tellus orci ac auctor augue mauris augue neque. Commodo sed egestas egestas fringilla phasellus. Cursus turpis massa tincidunt dui ut. Cras adipiscing enim eu turpis egestas. Eget velit aliquet sagittis id consectetur purus ut faucibus. Ornare arcu dui vivamus arcu felis bibendum."
+        bodyText ="I can confidently say that I started coding in my freshman year of high school. Since then I have completed various projects and learned many skills. I have many ideas that I still want to create. For now, I have listed my projects and skills below."
       />
       <div className='flex-container'>
         <ProjectCard></ProjectCard>
@@ -73,7 +74,6 @@ function App() {
       <div className='skills-flex-container'>
         <TextElement
         title = 'Skills' 
-        style = {centerText} 
         />
         <Skills/>
       </div>

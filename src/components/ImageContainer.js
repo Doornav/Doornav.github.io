@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/ImageContainer.css';
 
-function ImageContainer() {
+function ImageContainer(props) {
   const [active, setActive] = useState(false);
 
   return (
@@ -9,10 +9,20 @@ function ImageContainer() {
       className='imageContainer'
       onClick={() => setActive((prevActive) => !prevActive)}
       style={{
-        width: active ? 'min(70vw,70vh)' : 'min(50vw, 50vh)', 
+        width: active ? 'min(90vw,90vh)' : 'min(50vw, 50vh)', 
       }}
-    >
-      Insert Image Here
+    >  
+    <div style={{display: active ? '': 'none'}}>
+        <ul>
+            <li>item1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+        
+      
+      <img src={props.imgLink} alt='logo'/>
     </div>
   );
 }
