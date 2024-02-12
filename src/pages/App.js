@@ -56,7 +56,7 @@ function App() {
       </div>
       <div className='flex-container' id='experience'>
         <TextElement
-          title="B.S Computer Science Undergraduate"
+          title="B.S Computer Science Undergraduate 🧑🏾‍🎓"
           subtitle ="UC Santa Cruz"
           bodyText="Currently I am a first year at University of California, Santa Cruz. I am currently affiliated with Stevenson College. Relavent Course work I have completed so far includes :CSE 20: CSE 30: CSE 12: CSE 13: CSE 16"
         />
@@ -64,7 +64,7 @@ function App() {
         content ="Banana Slugs Spotted: 7"/>
       </div>
       <TextElement
-        title = "Experiences & Projects"
+        title = "Experiences & Projects 🛠️"
         bodyText ="I can confidently say that I started coding in my freshman year of high school. Since then I have completed various projects and learned many skills. I have many ideas that I still want to create. For now, I have listed my projects and skills below."
       />
       <div className='flex-container'>

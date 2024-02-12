@@ -22,7 +22,7 @@ function Lifting(){
             </div>
             <div>
                <TextElement
-            title = 'Weightlifting'
+            title = 'Weightlifting 🏋🏽'
             bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Nisi lacus sed viverra tellus in hac habitasse. Nibh tellus molestie nunc non blandit massa enim. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus."
             /> 
             </div>
