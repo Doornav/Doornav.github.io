@@ -9,9 +9,9 @@ function Lifting(){
     key={compoundLiftType}
     type={compoundLiftType}
     style={{
-      borderRadius: index === 0 ? '3vw 2vw 2vw 0' : 
-      index === compoundLiftTypes.length - 1 ? '0 2vw 2vw 3vw' :   // Last: no top left radius
-                    '0 2vw 2vw 0'  // Middle: no top left or bottom left radius
+      borderRadius: index === 0 ? '3vw 1vw 1vw 0' : 
+      index === compoundLiftTypes.length - 1 ? '0 1vw 1vw 3vw' :   // Last: no top left radius
+                    '0 1vw 1vw 0'  // Middle: no top left or bottom left radius
     }}
   />
 ));

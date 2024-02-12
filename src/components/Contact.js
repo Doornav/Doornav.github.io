@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import '../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
   const [nameText, setNameText] = useState('');
   const [emailText, setEmailText] = useState('');
   const [inputText, setInputText] = useState('');
+  const [messageSent, setMessageSent] = useState(false);
 
   const [namePlaceholder, setNamePlaceholder] = useState('Name');
   const [emailPlaceholder, setEmailPlaceholder] = useState('E-mail');
@@ -43,7 +46,21 @@ function Contact() {
       console.log('inputText:', { inputText });
       console.log('emailText:', { emailText });
       console.log('nameText:', { nameText });
-      window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=pranavpre@gmail.com&su=" + nameText + "&body=" + inputText;
+      
+          emailjs.sendForm('service_a736mg8', 'template_ifuv9ei', form.current, {
+              publicKey: 'Cj-kr5c1EdKbzoySt',
+            })
+            .then(
+              () => {
+                console.log('SUCCESS!');
+                setMessageSent(true);
+              },
+              (error) => {
+                console.log('FAILED...', error.text);
+              },
+            );
+
+          
     }
   };
 
@@ -60,15 +77,17 @@ function Contact() {
             <img src="./images/yt_icon.png" alt='image5' onClick={() => window.location.href="https://www.youtube.com/@doornav160"}/>
             <img src="./images/in_icon.png" alt='image5' onClick={() => window.location.href="https://www.linkedin.com/in/pranav-sathianathan-2621a8268/"}/>
           </div>
-          <button className='submit-button' onClick={handleButtonClick}>
+          <button className={`submit-button ${messageSent ? 'green' : ''}`} onClick={handleButtonClick}>
             Submit
           </button>
         </div>
 
         <div className='field-inputs'>
+          <form ref={form}>
           <input
             className='name-input'
             type='text'
+            name='user_name'
             placeholder={namePlaceholder}
             value={nameText}
             onChange={handleNameChange}
@@ -76,17 +95,19 @@ function Contact() {
           <input
             className='email-input'
             type='text'
+            name='user_email'
             placeholder={emailPlaceholder}
             value={emailText}
             onChange={handleEmailChange}
           />
           <textarea
             className='input'
-            rows={4}
+            rows={4}name='message'
             placeholder={inputPlaceholder}
             value={inputText}
             onChange={handleInputChange}
           />
+          </form>
         </div>
       </div>
     </>

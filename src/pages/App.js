@@ -8,7 +8,9 @@ import Lifting from '../components/Lifting';
 import Contact from '../components/Contact';
 
 
+
 function App() {
+  
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -43,7 +45,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className='flex-container'>
+      <div className='flex-container' style={{ marginTop: '10%' }} id='about'>
         <ImageContainer />
         <TextElement
           title="Pranav Sathianathan"
@@ -51,7 +53,7 @@ function App() {
           bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       </div>
-      <div className='flex-container'>
+      <div className='flex-container' id='experience'>
         <TextElement
           title="B.S Computer Science Undergraduate"
           bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -75,8 +77,11 @@ function App() {
         />
         <Skills/>
       </div>
-      <Lifting></Lifting>
-      <div className='flex-container'>
+      <div id='lifting'>
+        <Lifting></Lifting>
+      </div>
+      
+      <div className='flex-container' id ='contact'>
         <Contact/>
       </div>
       
