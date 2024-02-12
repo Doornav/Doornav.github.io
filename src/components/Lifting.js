@@ -1,40 +1,48 @@
 import React, { useState } from 'react';
 import '../styles/Lifting.css';
 import TextElement from './TextElement';
-import CompoundLift from './CompoundLift';
+
 
 function Lifting() {
-    const compoundLiftTypes = ['Squat', 'Bench', 'Deadlift'];
-    const [liftActive, setLiftActive] = useState(false);
 
-    const handleLiftToggle = (isActive) => {
-        setLiftActive(isActive);
-    };
+    const [toggleState, setToggleState] = useState(0)
 
-    const listLifts = compoundLiftTypes.map((compoundLiftType, index) => (
-        <CompoundLift
-            key={compoundLiftType}
-            type={compoundLiftType}
-            style={{
-                borderRadius: index === 0 ? '3vw 1vw 1vw 0' :
-                    index === compoundLiftTypes.length - 1 ? '0 1vw 1vw 3vw' :
-                        '0 1vw 1vw 0'
-            }}
-            onToggle={handleLiftToggle}
-        />
-    ));
+    const toggleTab = (index) => {
+        setToggleState(index)
+    }
+
+    const titleName = ['weightlifting', 'squat', 'bench', 'deadlift']
+    const content = ["I started working out in 2023, and so far I've made some great progress. However, I still have a long way to go if I ever want to compete in powerlifting. There have been up and downs. Nonetheless, we stay persistent! Here, I'll keep my record of the Big Three Lifts. I'll also show what I lifted when I first started:)."
+                    , 'here is where ill put my squat info'
+                    , 'here is where ill put my bench info'
+                    , 'here is where ill put my deadlift info']
 
     return (
+        
         <div className='lifting-container'>
-            <div>
-                {listLifts}
-            </div>
-            <div className={`text-element-container${liftActive ? 'hidden' : ''}`}>
-                <TextElement
-                    title='Weightlifting 🏋🏽'
-                    bodyText="I started working out in 2023, and so far I've made some great progress. However, I still have a long way to go if I ever want to compete in powerlifting. There have been up and downs. Nonetheless, we stay persistent! Here, I'll keep my record of the Big Three Lifts. I'll also show what I lifted when I first started:)."
-                />
-            </div>
+            <div className='tab-container'>
+                <div className={toggleState === 0 ? 'active-tab' : 'tab'}
+                onClick={() => toggleTab(0)}
+                style={{borderRadius: '3vw 0 0 0'}}>Lifting</div>
+
+                <div className={toggleState === 1 ? 'active-tab' : 'tab'}
+                onClick={() => toggleTab(1)}
+                style={{borderRadius: '0 0 0 0'}}>Squat</div>
+
+                <div className={toggleState === 2 ? 'active-tab' : 'tab'}
+                onClick={() => toggleTab(2)}
+                style={{borderRadius: '0 0 0 0'}}>Bench</div>
+
+                <div className={toggleState === 3 ? 'active-tab' : 'tab'}
+                onClick={() => toggleTab(3)}
+                style={{borderRadius: '0 3vw 0 0'}}>Deadlift</div>
+
+                    </div>
+            
+            <TextElement
+                title={titleName[toggleState]}
+                bodyText={content[toggleState]}
+            />
         </div>
     );
 }
