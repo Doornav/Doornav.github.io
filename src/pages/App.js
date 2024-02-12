@@ -46,7 +46,8 @@ function App() {
     <>
       <Navbar/>
       <div className='flex-container' style={{ marginTop: '10%' }} id='about'>
-        <ImageContainer imgLink = "./images/profile_icon.jpg" />
+        <ImageContainer imgLink = "./images/profile_icon.jpg" 
+        content = "Photo taken at the Park Butte (heh) Lookout, right next to Mount Baker in Washington State"/>
         <TextElement
           title="Pranav Sathianathan"
           subtitle="Undergraduate Student"
@@ -59,7 +60,8 @@ function App() {
           subtitle ="UC Santa Cruz"
           bodyText="Currently I am a first year at University of California, Santa Cruz. I am currently affiliated with Stevenson College. Relavent Course work I have completed so far includes :CSE 20: CSE 30: CSE 12: CSE 13: CSE 16"
         />
-        <ImageContainer imgLink = "./images/UCSC_icon.png"/>
+        <ImageContainer imgLink = "./images/UCSC_icon.png"
+        content ="Banana Slugs Spotted: 7"/>
       </div>
       <TextElement
         title = "Experiences & Projects"
