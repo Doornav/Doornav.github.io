@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.974f6f2c.css",
+    "main.js": "/static/js/main.c9de2ddb.js",
+    "static/js/592.d4bb2ca6.chunk.js": "/static/js/592.d4bb2ca6.chunk.js",
+    "static/media/Futura Medium Italic.otf": "/static/media/Futura Medium Italic.a2e765a88f43e641e365.otf",
+    "static/media/Futura Medium.otf": "/static/media/Futura Medium.b4abcb4bbe7b5984f519.otf",
+    "index.html": "/index.html",
+    "main.974f6f2c.css.map": "/static/css/main.974f6f2c.css.map",
+    "main.c9de2ddb.js.map": "/static/js/main.c9de2ddb.js.map",
+    "592.d4bb2ca6.chunk.js.map": "/static/js/592.d4bb2ca6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.974f6f2c.css",
+    "static/js/main.c9de2ddb.js"
+  ]
+}
