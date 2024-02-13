@@ -102,7 +102,7 @@ function Contact() {
           />
           <textarea
             className='input'
-            rows={4}name='message'
+            rows={10}name='message'
             placeholder={inputPlaceholder}
             value={inputText}
             onChange={handleInputChange}

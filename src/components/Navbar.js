@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <h1>Pranav S.</h1>
+      <h1 className='nav-title'>Pranav S.</h1>
       <ul>
         <li>
           <a href="#about" onClick={() => scrollToDiv('about')}>

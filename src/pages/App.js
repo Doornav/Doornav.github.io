@@ -45,7 +45,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className='flex-container' style={{ marginTop: '10%' }} id='about'>
+      <div className='flex-container-about' style={{marginTop: '10%'}}id='about'>
         <ImageContainer imgLink = "./images/profile_icon.jpg" 
         content = "Photo taken at the Park Butte (heh) Lookout, right next to Mount Baker in Washington State"/>
         <TextElement
