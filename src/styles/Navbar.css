@@ -39,7 +39,10 @@
     padding-inline: 1rem;
     transition: filter 0.3s ease-in-out;
     filter: drop-shadow(3px 3px black);
-    
+    &:hover{
+        height: 50%;
+        transition: height 0.3s ease-in-out;
+    }
 }
 
 .nav ul{
