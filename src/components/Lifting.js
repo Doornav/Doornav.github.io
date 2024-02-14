@@ -13,9 +13,9 @@ function Lifting() {
 
     const titleName = ['weightlifting', 'squat', 'bench', 'deadlift']
     const content = ["I started working out in 2023, and so far I've made some great progress. However, I still have a long way to go if I ever want to compete in powerlifting. There have been up and downs. Nonetheless, we stay persistent! Here, I'll keep my record of the Big Three Lifts. I'll also show what I lifted when I first started:)."
-                    , 'here is where ill put my squat info'
-                    , 'here is where ill put my bench info'
-                    , 'here is where ill put my deadlift info']
+                    , 'here is where ill put my squat info. For now heres a Fortnie video I made back during quarantine:)'
+                    , 'here is where ill put my bench info. For now heres a Fortnie video I made back during quarantine:)'
+                    , 'here is where ill put my deadlift info. For now heres a Fortnie video I made back during quarantine:)']
     const video = [ '' ,'TBbQePjURyk'
                     , 'eJurfWUbsBI'
                     ,'S7fKFg-vS1o']
