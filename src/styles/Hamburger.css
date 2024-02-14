@@ -16,7 +16,7 @@
     display: none;
     @media only screen and (max-width: 525px) {
     width: 6vw;
-    height: 6vw;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
