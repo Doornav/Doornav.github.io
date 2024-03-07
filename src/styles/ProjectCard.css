@@ -7,16 +7,45 @@
     color: lightgray;
     text-align: center;
     margin: 1%;
+    padding-inline: 2%;
+
+}
+.sub{
+    margin-bottom: 2%;
+}
+
+.video{
+    margin-top: 10%;
+    width: min(22vw);
+    height: min(12vw);
+    display: flex;
+    align-self: center;
+    margin-bottom: 2%;
+    margin-left: 8%;
 }
 
 @media only screen and (max-width: 900px) {
     .box {
+    padding-inline: 4%;
     background-color: #747474;
     width: min(70vw, 70vh);
-    height: min(40vw, 40vh);
+    height: fit-content;
+    min-height: min(40vw, 40vh);
     border-radius: 3vw;
     flex-shrink: 0;
     margin: 2%;
 
+    }
+    .sub{
+        margin-bottom: 7%;
+    }
+
+    .video{
+        margin-top: -5%;
+        width: min(50vw, 50vh);
+        height: min(28vw, 28vh);
+        display: flex;
+        align-self: center;
+        margin-left: 10%;
     }
   }

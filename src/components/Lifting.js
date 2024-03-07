@@ -11,12 +11,12 @@ function Lifting() {
         setToggleState(index)
     }
 
-    const titleName = ['weightlifting', 'squat', 'bench', 'deadlift']
-    const content = ["I started working out in 2023, and so far I've made some great progress. However, I still have a long way to go if I ever want to compete in powerlifting. There have been up and downs. Nonetheless, we stay persistent! Here, I'll keep my record of the Big Three Lifts. I'll also show what I lifted when I first started:)."
-                    , 'here is where ill put my squat info. For now heres a Fortnie video I made back during quarantine:)'
+    const titleName = ['Weightlifting', 'Squat', 'Bench', 'Deadlift']
+    const content = ["I started working out in June 2023, and so far I've made some great progress. However, I still have a long way to go if I ever want to compete in powerlifting. There have been up and downs. Nonetheless, we stay persistent! Here, I'll keep my record of the Big Three Lifts. I'll also show what I lifted when I first started:)."
+                    , 'here is where ill put my squat info. This was my first time hitting 225 for depth. Now I can do around 225x8'
                     , 'here is where ill put my bench info. For now heres a Fortnie video I made back during quarantine:)'
                     , 'here is where ill put my deadlift info. For now heres a Fortnie video I made back during quarantine:)']
-    const video = [ '' ,'TBbQePjURyk'
+    const video = [ '' ,'zX8wpiGafXA'
                     , 'eJurfWUbsBI'
                     ,'S7fKFg-vS1o']
 

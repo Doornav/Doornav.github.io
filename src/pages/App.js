@@ -47,7 +47,7 @@ function App() {
       <Navbar/>
       <div className='flex-container-about' style={{marginTop: '10%'}}id='about'>
         <ImageContainer imgLink = "./images/profile_icon.jpg" 
-        content = "Photo taken at the Park Butte (heh) Lookout, right next to Mount Baker in Washington State"/>
+        content = "Photo taken at the Park Butte Lookout, right next to Mount Baker in Washington State"/>
         <TextElement
           title="Pranav Sathianathan"
           subtitle="Undergraduate Student"
@@ -68,9 +68,9 @@ function App() {
         bodyText ="I can confidently say that I started coding in my freshman year of high school. Since then I have completed various projects and learned many skills. I have many ideas that I still want to create. For now, I have listed my projects and skills below."
       />
       <div className='flex-container'>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+        <ProjectCard title = 'Hustle Aid' subtitle = 'An Android application that provides hundreds of exercises for different muscle groups that can be catologed to create a trackable workout plan'video = "F4z0FSezgnY"></ProjectCard>
+        <ProjectCard title = '⚒️ POW PAL 🚧' subtitle = 'My next project that will be a fully published version of what Hustle Aid was meant to be. Created using MERN stack, POW PAL will be the ultimate application for any powerlifter.'></ProjectCard>
+        <ProjectCard title = '⚒️ Sports Betting AI 🚧' subtitle ='This project will utilize AI and machine learning models to accuratly predict player props for the NBA, focusing on Over/Under prop lines.'></ProjectCard>
         
       </div>
       <div className='skills-flex-container'>
